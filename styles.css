@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,4,147,1) 37%, rgba(0,212,255,1) 92%);
+}
+
+#main_div {
+    background-color: whitesmoke;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+nav {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#first_div, #second_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#first_div {
+    padding: 0 5%;
+}
+
+#second_div {
+    margin-top: 6%;
+}
+
+.img_div {
+    width: 100%;
+    background-image: url("my-image.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 8px;
+}
+
+img {
+    width: 100%;
+}
