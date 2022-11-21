@@ -121,6 +121,11 @@ a {
   transform: rotate(-0.25turn);
 }
 
+.list_set p {
+  text-align: center;
+  color: white;
+}
+
 ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
