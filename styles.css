@@ -1,52 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    width: 100%;
-    margin: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,4,147,1) 37%, rgba(0,212,255,1) 92%);
+  width: 100%;
+  margin: 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(4, 4, 147, 1) 37%,
+    rgba(0, 212, 255, 1) 92%
+  );
+}
+
+h1 {
+  font-size: 46px;
 }
 
 #main_div {
-    background-color: whitesmoke;
-    width: 95%;
-    margin: 0 auto;
-    border-radius: 8px;
+  background-color: whitesmoke;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 nav {
-    margin: 2%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 
-#first_div, #second_div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 70%;
-    margin: 0 auto;
+#first_div,
+#second_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  margin: 0 auto;
 }
 
 #first_div {
-    padding: 0 5%;
+  padding: 0 5%;
+}
+#first_div p {
+  font-size: 20px;
+  line-height: 1.7;
 }
 
 #second_div {
-    margin-top: 6%;
+  margin-top: 6%;
+  gap: 60px;
+}
+
+#second_div p {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .img_div {
-    width: 100%;
-    background-image: url("my-image.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 8px;
+  width: 100%;
+  background-image: url("my-image.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 8px;
 }
 
-img {
-    width: 100%;
+.about {
+  width: 100%;
+}
+
+/* skillset section */
+
+.container {
+  width: 100%;
+  height: 5%;
+  background-color: #ddd;
+  margin-bottom: 5%;
+}
+
+.skills {
+  text-align: right;
+  color: white;
+}
+
+.html {
+  width: 90%;
+  background-color: #04aa6d;
+}
+.css {
+  width: 80%;
+  background-color: #2196f3;
+}
+.js {
+  width: 30%;
+  background-color: #f44336;
+}
+.react {
+  width: 40%;
+  background-color: #808080;
 }
